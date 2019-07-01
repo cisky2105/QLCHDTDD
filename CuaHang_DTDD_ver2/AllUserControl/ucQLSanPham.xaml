@@ -1,0 +1,150 @@
+﻿<UserControl x:Class="CuaHang_DTDD_ver2.AllUserControl.ucQLSanPham"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CuaHang_DTDD_ver2.AllUserControl"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             d:DesignHeight="1000" d:DesignWidth="1000">
+    <Grid Loaded="Grid_Loaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Height="auto" Margin="124,11,124,1.8" Width="auto">
+            <TextBlock Style="{StaticResource MaterialDesignDisplay2TextBlock}">
+                    THÔNG TIN SẢN PHẨM
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="1" HorizontalAlignment="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <TextBox x:Name="txtMaSP" materialDesign:HintAssist.Hint="Mã sản phẩm:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold" Width="150" Margin="10, 20, 10, 0" IsReadOnly="True"/>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <WrapPanel>
+                            <TextBox x:Name="txtTenSP" materialDesign:HintAssist.Hint="Tên sản phẩm:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold"  Width="320" Margin="10, 20, 10, 0"/>
+                            <TextBox x:Name="txtGiaSP" materialDesign:HintAssist.Hint="Giá sản phẩm:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold"  Width="150" Margin="10, 20, 10, 0"/>
+                            <TextBox x:Name="txtKhuyenMai" materialDesign:HintAssist.Hint="Giá khuyến mãi:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold"  Width="150" Margin="10, 20, 10, 0"/>
+                            <ComboBox x:Name="cboLoaiDT" materialDesign:HintAssist.Hint="Loại điện thoại:" DisplayMemberPath="Tenloaidt" SelectedValuePath="Maloaidt"  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="14" FontWeight="Bold" Width="150" Margin="10, 20, 10, 0">
+                            </ComboBox>
+                            <ComboBox x:Name="cboNhaSanXuat" materialDesign:HintAssist.Hint="Nhà sản xuất:" DisplayMemberPath="TenNSX" SelectedValuePath="MaNSX" Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="14" FontWeight="Bold"  Width="150" Margin="10, 20, 10, 0">
+                            </ComboBox>
+                        </WrapPanel>
+                    </Grid>
+
+                </Grid>
+                <Grid Grid.Column="1" HorizontalAlignment="Right" Margin="10, 10, 0, 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Image x:Name="imgHinhAnh" Source="C:\Users\HOANG KHANG\Desktop\DuLieu\DuLieu\HinhAnhSP\ip_7_den.jpg" Width="200" Height="200" Stretch="Uniform"></Image>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Button
+                            Name="btnChonHinh"
+                             Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                             Width="120"
+                             ToolTip="Nhấn vào để chọn hình sản phẩm..."
+                            Margin="0,5,0,0"
+                            Click="btnChonHinh_Click">
+                            Chọn hình...
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <WrapPanel>
+                <Button
+                    x:Name="btnThemSP"
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    Width="130" Height="50"
+                    Margin="10,20,10,10"
+                    ToolTip="Nhấn vào để mở các ô nhập thông tin" 
+                    Click="btnThemSP_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\HOANG KHANG\Desktop\DoAnTN\Icon\003-plus.png" Stretch="Uniform"></Image>
+                        <TextBlock Text="Thêm" Style="{StaticResource MaterialDesignTitleTextBlock}" VerticalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>
+
+                <Button
+                    x:Name="btnXoa"
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    Width="130" Height="50"
+                    Margin="10,20,10,10"
+                    ToolTip="Resource name: MaterialDesignRaisedAccentButton" Click="btnXoa_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\HOANG KHANG\Desktop\DoAnTN\Icon\037-minus.png" Stretch="Uniform" Margin="0,0,10,0"></Image>
+                        <TextBlock Text="Xóa" Style="{StaticResource MaterialDesignTitleTextBlock}" VerticalAlignment="center"></TextBlock>
+                    </StackPanel>
+                </Button>
+                
+                <Button
+                    x:Name="btnSua"
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    Width="130" Height="50"
+                    Margin="10,20,10,10"
+                    ToolTip="Resource name: MaterialDesignRaisedAccentButton" Click="btnSua_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\HOANG KHANG\Desktop\DoAnTN\Icon\002-pencil.png" Stretch="Uniform" Margin="0,0,10,0"></Image>
+                        <TextBlock Text="Sửa" Style="{StaticResource MaterialDesignTitleTextBlock}" VerticalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>
+                
+                <Button
+                    x:Name="btnLuu"
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    Width="130" Height="50"
+                    Margin="10,20,10,10"
+                    ToolTip="Resource name: MaterialDesignRaisedAccentButton" Click="btnLuu_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\HOANG KHANG\Desktop\DoAnTN\Icon\save.png" Stretch="Uniform" Margin="0,0,10,0"></Image>
+                        <TextBlock Text="Lưu" VerticalAlignment="Center" Style="{StaticResource MaterialDesignTitleTextBlock}"></TextBlock>
+                    </StackPanel>
+                </Button>
+            </WrapPanel>
+            
+        </Grid>
+        <Grid Grid.Row="3" Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Height="auto">
+                <TextBox x:Name="txtTimKiemSP" materialDesign:HintAssist.Hint="Tìm kiếm:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold" Width="300" Margin="10,0, 0, 10" TextChanged="txtTimKiemSP_TextChanged"/>
+            </Grid>
+            <Grid Grid.Row="1"  Height="250" Width="850">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <ListView Name="lsDanhSachSanPham" HorizontalAlignment="Center" SelectionChanged="lsDanhSachSanPham_SelectionChanged" FontSize="15">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Mã sản phẩm" DisplayMemberBinding="{Binding MaSP}"></GridViewColumn>
+                                <GridViewColumn Header="Tên sản phẩm" DisplayMemberBinding="{Binding TenSP}"></GridViewColumn>
+                                <GridViewColumn Header="Loại sản phẩm" DisplayMemberBinding="{Binding MaLoaiDT}"></GridViewColumn>
+                                <GridViewColumn Header="Mã nhà sản xuất" DisplayMemberBinding="{Binding MaNSX}"></GridViewColumn>
+                                <GridViewColumn Header="Giá sản phẩm" DisplayMemberBinding="{Binding GiaBan}"></GridViewColumn>
+                                <GridViewColumn Header="Giá khuyến mãi" DisplayMemberBinding="{Binding GiaKM}"></GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

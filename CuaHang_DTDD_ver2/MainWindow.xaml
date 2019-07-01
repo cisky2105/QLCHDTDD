@@ -1,0 +1,100 @@
+﻿<Window x:Class="CuaHang_DTDD_ver2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CuaHang_DTDD_ver2"
+        xmlns:uc="clr-namespace:CuaHang_DTDD_ver2.AllUserControl"
+        xmlns:dto="clr-namespace:DTO;assembly=DTO"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        x:Name="mainWD"
+        Title="MainWindow" Height="1000" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HorizontalAlignment="Center">
+            <StackPanel>
+                <Menu IsMainMenu="True" Margin="0,0,0,-0.2" Width="auto" FontSize="23">
+                    <MenuItem Header="Hệ thống">
+                        <MenuItem Header="Đổi mật khẩu">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="PasswordReset" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Thoát">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="ExitToApp" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Danh mục">
+                        <MenuItem Header="Quản lý sản phẩm" x:Name="mnQLSP" Click="mnQLSP_Click">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="MobilePhoneAndroid" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Quản lý nhân viên" x:Name="mnQLNV" Click="mnQLNV_Click">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="UserGroup" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Quản lý Khách hàng">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="HumanMaleFemale" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Quản lý nhà cung cấp">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="HomePlus" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Quản lý nhà sản xuất">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="OfficeBuilding" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Quản lý bán hàng">
+                        <MenuItem Header="Bán hàng">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="TrolleyPlus" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Nhập hàng">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="BriefcasePlus" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Quản lý kho">
+                        <MenuItem Header="Tồn kho">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="BriefcaseSearch" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                    </MenuItem>
+                    <MenuItem Header="Báo cáo">
+                        <MenuItem Header="Bán hàng">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="ScriptTextOutline" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Nhập hàng">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="ScriptText" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                </Menu>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <StackPanel x:Name="pnlUC">
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,4 @@
+C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\DTO\bin\Debug\DTO.dll
+C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\DTO\bin\Debug\DTO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\DTO\obj\Debug\DTO.dll
+C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\DTO\obj\Debug\DTO.pdb
