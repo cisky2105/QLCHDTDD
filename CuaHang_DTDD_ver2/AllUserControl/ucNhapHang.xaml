@@ -56,18 +56,33 @@
                         <ComboBox x:Name="cboNhanVien" materialDesign:HintAssist.Hint="Nhân viên:" DisplayMemberPath="HoVaTen" SelectedValuePath="CMNDNV" Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="14" FontWeight="Bold"  Width="200" Margin="10, 10, 10, 0"/>
                         <ComboBox x:Name="cboNhaCungCap" materialDesign:HintAssist.Hint="Nhà cung cấp" DisplayMemberPath="TenNCC" SelectedValuePath="MaNCC" Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="14" FontWeight="Bold"  Width="200" Margin="10, 10, 10, 0"/>
                     </WrapPanel>
-                    <Button
+                    <WrapPanel HorizontalAlignment="Center">
+                        <Button
                     x:Name="btnThem"
                     Style="{StaticResource MaterialDesignRaisedAccentButton}"
                     Width="130" Height="50"
                     Margin="10,20,10,10"
                     ToolTip="Nhấn vào để mở các ô nhập thông tin"
                     Click="btnThem_Click">
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="C:\Users\HOANG KHANG\Desktop\DoAnTN\Icon\003-plus.png" Stretch="Uniform"/>
-                            <TextBlock Text="Thêm" Style="{StaticResource MaterialDesignTitleTextBlock}" VerticalAlignment="Center"/>
-                        </StackPanel>
-                    </Button>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Icon/003-plus.png" Stretch="Uniform"/>
+                                <TextBlock Text="Thêm" Style="{StaticResource MaterialDesignTitleTextBlock}" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button
+                                    x:Name="btnLuu"
+                                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                                    Width="130" Height="50"   
+                            Margin="10,20,10,10"
+                                    ToolTip="Resource name: MaterialDesignRaisedAccentButton" 
+                                    Click="btnLuu_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Icon/save.png" Stretch="Uniform" Margin="0,0,10,0"></Image>
+                                <TextBlock Text="Lưu" VerticalAlignment="Center" Style="{StaticResource MaterialDesignTitleTextBlock}"></TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </WrapPanel>
+                    
                     <Grid Height="200" Width="500">
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
                             <ListView Name="lsChiTietHoaDon" HorizontalAlignment="Center" FontSize="15">
@@ -92,15 +107,16 @@
                         </Grid>
                         <Grid Grid.Column="1">
                             <WrapPanel>
+                                
                                 <Button
-                                    x:Name="btnLuu"
+                                    x:Name="btnInHoaDon"
                                     Style="{StaticResource MaterialDesignRaisedAccentButton}"
-                                    Width="130" Height="50"                                     
+                                    Width="200" Height="50"                                     
                                     ToolTip="Resource name: MaterialDesignRaisedAccentButton" 
-                                    Click="btnLuu_Click">
+                                    Click="btnInHoaDon_Click">
                                     <StackPanel Orientation="Horizontal">
-                                        <Image Source="C:\Users\HOANG KHANG\Desktop\DoAnTN\Icon\save.png" Stretch="Uniform" Margin="0,0,10,0"></Image>
-                                        <TextBlock Text="Lưu" VerticalAlignment="Center" Style="{StaticResource MaterialDesignTitleTextBlock}"></TextBlock>
+                                        <Image Source="/Icon/save.png" Stretch="Uniform" Margin="0,0,10,0"/>
+                                        <TextBlock Text="In hóa đơn" VerticalAlignment="Center" Style="{StaticResource MaterialDesignTitleTextBlock}"/>
                                     </StackPanel>
                                 </Button>
                             </WrapPanel>

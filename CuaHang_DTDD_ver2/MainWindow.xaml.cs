@@ -31,6 +31,13 @@ namespace CuaHang_DTDD_ver2
                      
         }
 
+        private clsNhanVien_DTO _nvdto;
+        public clsNhanVien_DTO Nvdto
+        {
+            get { return _nvdto; }
+            set { _nvdto = value; }
+        }
+
         private void mnQLSP_Click(object sender, RoutedEventArgs e)
         {
             //Controls thay bang children
@@ -70,8 +77,42 @@ namespace CuaHang_DTDD_ver2
         private void mnNhapHang_Click(object sender, RoutedEventArgs e)
         {
             ucNhapHang qlnh = new ucNhapHang();
+            qlnh.Nvdnto = Nvdto;
             pnlUC.Children.Clear();
             pnlUC.Children.Add(qlnh);
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            clsNhanVien_DTO nv = new clsNhanVien_DTO();
+            nv = Nvdto;
+
+            string quyen = nv.Quyen;
+            if (quyen == "MQ00002")
+            {
+                mnDanhMuc.Visibility = Visibility.Collapsed;
+                mnNhapHang.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void mnDoiMatKhau_Click(object sender, RoutedEventArgs e)
+        {
+            ResetPasswordWindow f = new ResetPasswordWindow();
+            f.NhanVien = Nvdto;
+            f.ShowDialog();
+        }
+
+        private void mnTonKho_Click(object sender, RoutedEventArgs e)
+        {
+            ucTonKho tonkho = new ucTonKho();
+            pnlUC.Children.Clear();
+            pnlUC.Children.Add(tonkho);
+        }
+
+        private void mnBaoCaoNhap_Click(object sender, RoutedEventArgs e)
+        {
+            frmReportNhapHang f = new frmReportNhapHang();
+            f.ShowDialog();
         }
     }
 }

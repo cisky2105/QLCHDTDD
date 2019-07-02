@@ -129,42 +129,46 @@ namespace CuaHang_DTDD_ver2.AllUserControl
 
         private void btnLuu_Click(object sender, RoutedEventArgs e)
         {
-
-            try
+            if(txtDiaChiNCC.Text ==""||txtEmailNCC.Text==""||txtSDTNCC.Text==""||txtTenNCC.Text=="")
             {
-                if (tam == 0)
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+            } else {
+                try
                 {
-                    GetDataChiTiet();
-                    if (ncc_BUS.ThemNhaCungCap(nccChon_DTO))
+                    if (tam == 0)
                     {
-                        MessageBox.Show("Thêm nhà cung cấp thành công!");
-                        Grid_Loaded(sender, e);
+                        GetDataChiTiet();
+                        if (ncc_BUS.ThemNhaCungCap(nccChon_DTO))
+                        {
+                            MessageBox.Show("Thêm nhà cung cấp thành công!");
+                            Grid_Loaded(sender, e);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Thêm nhà cung cấp không thành công!");
+                            nccChon_DTO = null;
+                        }
                     }
-                    else
+                    if (tam == 1)
                     {
-                        MessageBox.Show("Thêm nhà cung cấp không thành công!");
-                        nccChon_DTO = null;
+                        GetDataChiTiet();
+                        if (ncc_BUS.CapNhatNhaCungCap(nccChon_DTO))
+                        {
+                            MessageBox.Show("Sửa nhà cung cấp thành công!");
+                            Grid_Loaded(sender, e);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sửa nhà cung cấp không thành công!");
+                            nccChon_DTO = null;
+                        }
                     }
+                    DisGiaoDien();
                 }
-                if (tam == 1)
+                catch (Exception ex)
                 {
-                    GetDataChiTiet();
-                    if (ncc_BUS.CapNhatNhaCungCap(nccChon_DTO))
-                    {
-                        MessageBox.Show("Sửa nhà cung cấp thành công!");
-                        Grid_Loaded( sender,  e);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Sửa nhà cung cấp không thành công!");
-                        nccChon_DTO = null;
-                    }
+                    MessageBox.Show(ex.Message);
                 }
-                DisGiaoDien();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
 

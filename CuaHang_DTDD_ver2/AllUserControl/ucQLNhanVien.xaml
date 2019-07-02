@@ -71,7 +71,7 @@
                     ToolTip="Nhấn vào để mở các ô nhập thông tin"
                     Click="btnThem_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="C:\Users\HOANG KHANG\Desktop\DoAnTN\Icon\003-plus.png" Stretch="Uniform"></Image>
+                        <Image Source="/Icon/003-plus.png" Stretch="Uniform"></Image>
                         <TextBlock Text="Thêm" Style="{StaticResource MaterialDesignTitleTextBlock}" VerticalAlignment="Center"></TextBlock>
                     </StackPanel>
                 </Button>
@@ -83,7 +83,7 @@
                     ToolTip="Resource name: MaterialDesignRaisedAccentButton" 
                     Click="btnXoa_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="C:\Users\HOANG KHANG\Desktop\DoAnTN\Icon\037-minus.png" Stretch="Uniform" Margin="0,0,10,0"></Image>
+                        <Image Source="/Icon/037-minus.png" Stretch="Uniform" Margin="0,0,10,0"></Image>
                         <TextBlock Text="Xóa" Style="{StaticResource MaterialDesignTitleTextBlock}" VerticalAlignment="center"></TextBlock>
                     </StackPanel>
                 </Button>
@@ -96,7 +96,7 @@
                     ToolTip="Resource name: MaterialDesignRaisedAccentButton" 
                     Click="btnSua_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="C:\Users\HOANG KHANG\Desktop\DoAnTN\Icon\002-pencil.png" Stretch="Uniform" Margin="0,0,10,0"></Image>
+                        <Image Source="/Icon/002-pencil.png" Stretch="Uniform" Margin="0,0,10,0"></Image>
                         <TextBlock Text="Sửa" Style="{StaticResource MaterialDesignTitleTextBlock}" VerticalAlignment="Center"></TextBlock>
                     </StackPanel>
                 </Button>
@@ -109,7 +109,7 @@
                     ToolTip="Resource name: MaterialDesignRaisedAccentButton" 
                     Click="btnLuu_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="C:\Users\HOANG KHANG\Desktop\DoAnTN\Icon\save.png" Stretch="Uniform" Margin="0,0,10,0"></Image>
+                        <Image Source="/Icon/save.png" Stretch="Uniform" Margin="0,0,10,0"></Image>
                         <TextBlock Text="Lưu" VerticalAlignment="Center" Style="{StaticResource MaterialDesignTitleTextBlock}"></TextBlock>
                     </StackPanel>
                 </Button>

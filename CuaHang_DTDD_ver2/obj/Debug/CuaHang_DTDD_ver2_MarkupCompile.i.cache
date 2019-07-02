@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\App.xaml
-7414276417
+10183231474
 
-16-1679505771
-171454161617
-AllUserControl\ucKhachHang.xaml;AllUserControl\ucNhapHang.xaml;AllUserControl\ucQLNhaCungCap.xaml;AllUserControl\ucQLNhanVien.xaml;AllUserControl\ucQLNSX.xaml;AllUserControl\ucQLSanPham.xaml;MainWindow.xaml;
+25-1660901348
+24-947294919
+AllUserControl\ucKhachHang.xaml;AllUserControl\ucNhapHang.xaml;AllUserControl\ucQLNhaCungCap.xaml;AllUserControl\ucQLNhanVien.xaml;AllUserControl\ucQLNSX.xaml;AllUserControl\ucQLSanPham.xaml;AllUserControl\ucTonKho.xaml;LoginWindow.xaml;MainWindow.xaml;ResetPasswordWindow.xaml;
 
-True
+False
 

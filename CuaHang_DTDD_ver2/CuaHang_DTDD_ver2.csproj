@@ -43,8 +43,24 @@
       <HintPath>..\packages\MaterialDesignThemes.2.5.1\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -63,6 +79,36 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AllUserControl\ucTonKho.xaml.cs">
+      <DependentUpon>ucTonKho.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPhieuNhap.cs">
+      <DependentUpon>DataSetPhieuNhap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPhieuNhap.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPhieuNhap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportNhapHang.Designer.cs">
+      <DependentUpon>frmReportNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_CuaHangDTDDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_CuaHangDTDDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_CuaHangDTDDDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_CuaHangDTDDDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPasswordWindow.xaml.cs">
+      <DependentUpon>ResetPasswordWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AllUserControl\ucKhachHang.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -84,6 +130,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AllUserControl\ucQLSanPham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AllUserControl\ucTonKho.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -114,10 +168,17 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BaseViewModel.cs" />
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ResetPasswordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -133,16 +194,54 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="frmReportNhapHang.resx">
+      <DependentUpon>frmReportNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="rptPhieuNhap.rdlc" />
+    <None Include="DataSetPhieuNhap.xsc">
+      <DependentUpon>DataSetPhieuNhap.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPhieuNhap.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPhieuNhap.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetPhieuNhap.xss">
+      <DependentUpon>DataSetPhieuNhap.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="QL_CuaHangDTDDDataSet.xsc">
+      <DependentUpon>QL_CuaHangDTDDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_CuaHangDTDDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_CuaHangDTDDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_CuaHangDTDDDataSet.xss">
+      <DependentUpon>QL_CuaHangDTDDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_CuaHangDTDDDataSet1.xsc">
+      <DependentUpon>QL_CuaHangDTDDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_CuaHangDTDDDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_CuaHangDTDDDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_CuaHangDTDDDataSet1.xss">
+      <DependentUpon>QL_CuaHangDTDDDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -156,6 +255,154 @@
       <Project>{9fd1e9ef-6666-4841-8499-083df805a130}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\001-browser.png" />
+    <Resource Include="Icon\001-buildings.png" />
+    <Resource Include="Icon\002-add-reminder.png" />
+    <Resource Include="Icon\002-pencil.png" />
+    <Resource Include="Icon\003-plus.png" />
+    <Resource Include="Icon\003-scatter-plot.png" />
+    <Resource Include="Icon\004-documents.png" />
+    <Resource Include="Icon\004-player.png" />
+    <Resource Include="Icon\005-call.png" />
+    <Resource Include="Icon\005-loading.png" />
+    <Resource Include="Icon\006-chevron.png" />
+    <Resource Include="Icon\006-suitcase.png" />
+    <Resource Include="Icon\007-feedback.png" />
+    <Resource Include="Icon\007-menu.png" />
+    <Resource Include="Icon\008-download.png" />
+    <Resource Include="Icon\008-salary.png" />
+    <Resource Include="Icon\009-logout.png" />
+    <Resource Include="Icon\009-tree-structure.png" />
+    <Resource Include="Icon\010-management.png" />
+    <Resource Include="Icon\010-notepad.png" />
+    <Resource Include="Icon\011-chevron.png" />
+    <Resource Include="Icon\011-money-transfer.png" />
+    <Resource Include="Icon\012-cloud.png" />
+    <Resource Include="Icon\012-delete folder.png" />
+    <Resource Include="Icon\013-attached.png" />
+    <Resource Include="Icon\013-control.png" />
+    <Resource Include="Icon\014-audit.png" />
+    <Resource Include="Icon\014-email.png" />
+    <Resource Include="Icon\015-find.png" />
+    <Resource Include="Icon\015-service.png" />
+    <Resource Include="Icon\016-job.png" />
+    <Resource Include="Icon\016-transform.png" />
+    <Resource Include="Icon\017-bookmark.png" />
+    <Resource Include="Icon\017-stopwatch.png" />
+    <Resource Include="Icon\018-blocked.png" />
+    <Resource Include="Icon\018-user.png" />
+    <Resource Include="Icon\019-open in browser.png" />
+    <Resource Include="Icon\019-worldwide.png" />
+    <Resource Include="Icon\020-info.png" />
+    <Resource Include="Icon\020-message.png" />
+    <Resource Include="Icon\021-circled.png" />
+    <Resource Include="Icon\021-mail-advertising.png" />
+    <Resource Include="Icon\022-omni-channel.png" />
+    <Resource Include="Icon\022-website.png" />
+    <Resource Include="Icon\023-accesibility.png" />
+    <Resource Include="Icon\023-businessman.png" />
+    <Resource Include="Icon\024-percentage.png" />
+    <Resource Include="Icon\024-tabs.png" />
+    <Resource Include="Icon\025-print.png" />
+    <Resource Include="Icon\025-upload.png" />
+    <Resource Include="Icon\026-histogram.png" />
+    <Resource Include="Icon\026-search.png" />
+    <Resource Include="Icon\027-laptop.png" />
+    <Resource Include="Icon\027-slider.png" />
+    <Resource Include="Icon\028-browser.png" />
+    <Resource Include="Icon\028-pie-chart.png" />
+    <Resource Include="Icon\029-chevron.png" />
+    <Resource Include="Icon\029-money.png" />
+    <Resource Include="Icon\030-close.png" />
+    <Resource Include="Icon\030-contact-book.png" />
+    <Resource Include="Icon\031-invite.png" />
+    <Resource Include="Icon\031-move.png" />
+    <Resource Include="Icon\032-task-planning.png" />
+    <Resource Include="Icon\032-unlocked.png" />
+    <Resource Include="Icon\033-chevron.png" />
+    <Resource Include="Icon\033-enterprise.png" />
+    <Resource Include="Icon\034-advertising.png" />
+    <Resource Include="Icon\034-settings.png" />
+    <Resource Include="Icon\035-branching.png" />
+    <Resource Include="Icon\035-square.png" />
+    <Resource Include="Icon\036-add.png" />
+    <Resource Include="Icon\036-search.png" />
+    <Resource Include="Icon\037-minus.png" />
+    <Resource Include="Icon\037-save.png" />
+    <Resource Include="Icon\038-protection.png" />
+    <Resource Include="Icon\038-search.png" />
+    <Resource Include="Icon\039-gantt-chart.png" />
+    <Resource Include="Icon\039-restore.png" />
+    <Resource Include="Icon\040-exchange.png" />
+    <Resource Include="Icon\040-password.png" />
+    <Resource Include="Icon\041-internet.png" />
+    <Resource Include="Icon\041-main.png" />
+    <Resource Include="Icon\042-share.png" />
+    <Resource Include="Icon\042-term.png" />
+    <Resource Include="Icon\043-add folder.png" />
+    <Resource Include="Icon\043-management-1.png" />
+    <Resource Include="Icon\044-minimize.png" />
+    <Resource Include="Icon\044-money-transfer-1.png" />
+    <Resource Include="Icon\045-search.png" />
+    <Resource Include="Icon\045-suitcase-1.png" />
+    <Resource Include="Icon\046-show.png" />
+    <Resource Include="Icon\046-stats.png" />
+    <Resource Include="Icon\047-link.png" />
+    <Resource Include="Icon\047-profit.png" />
+    <Resource Include="Icon\048-planning.png" />
+    <Resource Include="Icon\048-start.png" />
+    <Resource Include="Icon\049-checked.png" />
+    <Resource Include="Icon\049-statistics-report.png" />
+    <Resource Include="Icon\050-block-user.png" />
+    <Resource Include="Icon\050-menu.png" />
+    <Resource Include="Icon\576712 %281%29.jpg" />
+    <Resource Include="Icon\576712.jpg" />
+    <Resource Include="Icon\iconfinder_00-ELASTOFONT-STORE-READY_cart_2703080.png" />
+    <Resource Include="Icon\iconfinder_00-ELASTOFONT-STORE-READY_invoice_2703075.png" />
+    <Resource Include="Icon\iconfinder_15_1757454.png" />
+    <Resource Include="Icon\iconfinder_17-Report_2924878.png" />
+    <Resource Include="Icon\iconfinder_89_box_search_online_search_e_shopping_4307937.png" />
+    <Resource Include="Icon\iconfinder_account_2428662.png" />
+    <Resource Include="Icon\iconfinder_close_32391.png" />
+    <Resource Include="Icon\iconfinder_comerce_delivery_shop_business-01_4544849.png" />
+    <Resource Include="Icon\iconfinder_comerce_delivery_shop_business-10_4544845.png" />
+    <Resource Include="Icon\iconfinder_contacts_2428675.png" />
+    <Resource Include="Icon\iconfinder_envelope-stats_1291753.png" />
+    <Resource Include="Icon\iconfinder_exit-enter-leave-door-out_2931185.png" />
+    <Resource Include="Icon\iconfinder_finance-05_808674.png" />
+    <Resource Include="Icon\iconfinder_finance-06_808673.png" />
+    <Resource Include="Icon\iconfinder_finance-21_808661.png" />
+    <Resource Include="Icon\iconfinder_icons_exit2_1564506.png" />
+    <Resource Include="Icon\iconfinder_invoice_4172173.png" />
+    <Resource Include="Icon\iconfinder_mobile_phone_103632.png" />
+    <Resource Include="Icon\iconfinder_multimedia-39_2849797.png" />
+    <Resource Include="Icon\iconfinder_office_1372378.png" />
+    <Resource Include="Icon\iconfinder_Privacy_2921800.png" />
+    <Resource Include="Icon\iconfinder_seo-report_2944876.png" />
+    <Resource Include="Icon\iconfinder_Tilda_Icons_1ed_phone_3586359.png" />
+    <Resource Include="Icon\iconfinder_user_male4_172628.png" />
+    <Resource Include="Icon\lock.png" />
+    <Resource Include="Icon\power.png" />
+    <Resource Include="Icon\repeat.png" />
+    <Resource Include="Icon\save.png" />
+    <Resource Include="Icon\search.png" />
+    <Resource Include="Icon\shop.png" />
+    <Resource Include="Icon\trash.png" />
+    <Resource Include="Icon\user %281%29.png" />
+    <Resource Include="Icon\user.png" />
+    <Resource Include="Icon\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\SP00001.jpg" />
+    <Resource Include="images\SP00002.jpg" />
+    <Resource Include="images\SP00003.jpg" />
+    <Resource Include="images\SP00004.jpg" />
+    <Resource Include="images\SP00005.jpg" />
+    <Resource Include="images\SP00006.jpg" />
+    <Resource Include="images\SP00007.jpg" />
+    <Resource Include="images\SP00008.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

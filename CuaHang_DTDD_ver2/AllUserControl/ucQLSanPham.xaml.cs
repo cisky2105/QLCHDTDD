@@ -37,7 +37,8 @@ namespace CuaHang_DTDD_ver2.AllUserControl
         clsLoaiDT_BUS loaidt_BUS = new clsLoaiDT_BUS();
         clsSanPham_DTO spChon_DTO = null;
         int tam = 0; // 0 la them, 1 la sua
-        string strPath = @"C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\bin\Debug\images\";
+        string strPath = @"/images/";
+        string strPath2 = @"C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\images\";
 
         List<clsSanPham_DTO> lsSanPham = new List<clsSanPham_DTO>();
         List<clsNhaSanXuat_DTO> lsNhaSanXuat = new List<clsNhaSanXuat_DTO>();
@@ -89,15 +90,10 @@ namespace CuaHang_DTDD_ver2.AllUserControl
                 txtKhuyenMai.Text = spChon_DTO.GiaKM.ToString();
                 cboNhaSanXuat.SelectedValue = spChon_DTO.MaNSX;
                 cboLoaiDT.SelectedValue = spChon_DTO.MaLoaiDT;
-                if (File.Exists(strPath + spChon_DTO.HinhAnh))
-                {
-                    string path = strPath + spChon_DTO.HinhAnh;
-                    imgHinhAnh.Source = new BitmapImage(new Uri(path));
-                }
-                else
-                {
-                    imgHinhAnh.Source = null;
-                }
+                string path = strPath + spChon_DTO.HinhAnh;
+                Uri imageUri = new Uri(path, UriKind.Relative);
+                BitmapImage imageBitmap = new BitmapImage(imageUri);
+                imgHinhAnh.Source = imageBitmap;                
             }
             else
             {
@@ -220,66 +216,73 @@ namespace CuaHang_DTDD_ver2.AllUserControl
 
         private void btnLuu_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if(txtTenSP.Text == "" || txtGiaSP.Text == "" || imgHinhAnh.Source == null)
             {
-                if (tam == 0)
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+            }
+            else
+            {
+                try
                 {
-                    GetDataChiTiet();
-                    if (sp_BUS.ThemSanPham(spChon_DTO))
+                    if (tam == 0)
                     {
-                        if (imgHinhAnh.Source != null)
+                        GetDataChiTiet();
+                        if (sp_BUS.ThemSanPham(spChon_DTO))
                         {
-                            //imgHinhAnh.Source.Save(spChon_DTO.HinhAnh);
-                            string destinationPath = strPath + spChon_DTO.HinhAnh;
-                            File.Copy(filepath, destinationPath, true);
-                        }
-                        MessageBox.Show("Thêm sản phẩm thành công!");
-                        Grid_Loaded(sender, e);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Thêm sản phẩm không thành công!");
-                        spChon_DTO = null;
-                    }
-                }
-                if (tam == 1)
-                {
-                    GetDataChiTiet();
-                    if (sp_BUS.CapNhatSanPham(spChon_DTO))
-                    {
-                        if (imgHinhAnh.Source != null)
-                        {
-                            string destinationPath = strPath + spChon_DTO.HinhAnh;
-                            try
+                            if (imgHinhAnh.Source != null)
                             {
-                                if (File.Exists(destinationPath))
-                                {
-                                    imgHinhAnh.Source = null;
-                                    File.Delete(destinationPath);
-                                }
+                                string destinationPath = strPath2 + spChon_DTO.HinhAnh;
                                 File.Copy(filepath, destinationPath, true);
-
                             }
-                            catch (Exception ex)
-                            {
-
-                            }
+                            MessageBox.Show("Thêm sản phẩm thành công!");
+                            Grid_Loaded(sender, e);
                         }
-                        MessageBox.Show("Sửa sản phẩm thành công!");                        
-                        Grid_Loaded(sender, e);                        
+                        else
+                        {
+                            MessageBox.Show("Thêm sản phẩm không thành công!");
+                            spChon_DTO = null;
+                        }
                     }
-                    else
+                    if (tam == 1)
                     {
-                        MessageBox.Show("Sửa sản phẩm không thành công!");
-                        spChon_DTO = null;
+                        GetDataChiTiet();
+                        if (sp_BUS.CapNhatSanPham(spChon_DTO))
+                        {
+                            if (imgHinhAnh.Source != null)
+                            {
+                                string destinationPath = strPath + spChon_DTO.HinhAnh;
+                                try
+                                {
+                                    if (File.Exists(destinationPath))
+                                    {
+                                        imgHinhAnh.Source = null;
+                                        File.Delete(destinationPath);
+                                    }
+                                    File.Copy(filepath, destinationPath, true);
+
+                                }
+                                catch (Exception ex)
+                                {
+
+                                }
+                            }
+                            MessageBox.Show("Sửa sản phẩm thành công!");
+                            Grid_Loaded(sender, e);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sửa sản phẩm không thành công!");
+                            spChon_DTO = null;
+                        }
                     }
+                    DisGiaoDien();
                 }
-                DisGiaoDien();
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
         }
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)

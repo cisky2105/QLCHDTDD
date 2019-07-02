@@ -9,8 +9,8 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         x:Name="mainWD"
-        Title="MainWindow" Height="1000" Width="1000">
-    <Grid>
+        Height="1000" Width="1000">
+    <Grid Loaded="Grid_Loaded">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
@@ -19,7 +19,7 @@
             <StackPanel>
                 <Menu IsMainMenu="True" Margin="0,0,0,-0.2" Width="auto" FontSize="23">
                     <MenuItem Header="Hệ thống">
-                        <MenuItem Header="Đổi mật khẩu">
+                        <MenuItem x:Name="mnDoiMatKhau" Header="Đổi mật khẩu" Click="mnDoiMatKhau_Click">
                             <MenuItem.Icon>
                                 <materialDesign:PackIcon Kind="PasswordReset" />
                             </MenuItem.Icon>
@@ -30,7 +30,7 @@
                             </MenuItem.Icon>
                         </MenuItem>
                     </MenuItem>
-                    <MenuItem Header="Danh mục">
+                    <MenuItem Header="Danh mục" x:Name="mnDanhMuc">
                         <MenuItem Header="Quản lý sản phẩm" x:Name="mnQLSP" Click="mnQLSP_Click">
                             <MenuItem.Icon>
                                 <materialDesign:PackIcon Kind="MobilePhoneAndroid" />
@@ -70,7 +70,7 @@
                         </MenuItem>
                     </MenuItem>
                     <MenuItem Header="Quản lý kho">
-                        <MenuItem Header="Tồn kho">
+                        <MenuItem x:Name="mnTonKho" Header="Tồn kho" Click="mnTonKho_Click">
                             <MenuItem.Icon>
                                 <materialDesign:PackIcon Kind="BriefcaseSearch" />
                             </MenuItem.Icon>
@@ -83,7 +83,7 @@
                                 <materialDesign:PackIcon Kind="ScriptTextOutline" />
                             </MenuItem.Icon>
                         </MenuItem>
-                        <MenuItem Header="Nhập hàng">
+                        <MenuItem x:Name="mnBaoCaoNhap" Header="Nhập hàng" Click="mnBaoCaoNhap_Click">
                             <MenuItem.Icon>
                                 <materialDesign:PackIcon Kind="ScriptText" />
                             </MenuItem.Icon>

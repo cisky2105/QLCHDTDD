@@ -73,7 +73,7 @@ namespace CuaHang_DTDD_ver2.AllUserControl
 
             clsNhanVien_DTO nvdangnhap = new clsNhanVien_DTO();
             cboNhanVien.ItemsSource = lsNhanVien;            
-            cboNhanVien.SelectedValue = new clsNhanVien_DTO() { CMNDNV = 0306161426, HoVaTen = "Lu Hoang Khang"}/* Nvdnto.CMNDNV*/;
+            cboNhanVien.SelectedValue = Nvdnto.CMNDNV;
 
             //cboNhanVien.ValueMember = Nvdnto.CMNDNV.ToString();
         }
@@ -89,34 +89,47 @@ namespace CuaHang_DTDD_ver2.AllUserControl
         }
         private void btnThem_Click(object sender, RoutedEventArgs e)
         {
-            txtMaHDNhap.Text = hdn_BUS.LayMaTiepTheo();
-            if (spChon_DTO != null)
+            if(txtGiaSP.Text==""||txtSoLuongNhap.Text == "")
             {
-                clsChiTietHDNhap_DTO ct = lsChiTiet.Find(o => o.MaSP == spChon_DTO.MaSP);
-                if (ct != null)
-                {
-                    ct.SoLuong += int.Parse(txtSoLuongNhap.Text);
-                }
-                else
-                {
-                    //ct.MaHDNhap = txtMaHDNhap.Text;
-                    ct = new clsChiTietHDNhap_DTO();
-                    ct.MaSP = spChon_DTO.MaSP;
-                    ct.MaHDNhap = txtMaHDNhap.Text;
-                    ct.SoLuong = int.Parse(txtSoLuongNhap.Text);
-                    ct.DonGia = spChon_DTO.GiaBan;
-                    lsChiTiet.Add(ct);
-                }
-                txtThanhTien.Text = lsChiTiet.Sum(o => o.ThanhTien).ToString();
-                lsChiTietHoaDon.Items.Clear();
-                foreach(var item in lsChiTiet)
-                {
-                    lsChiTietHoaDon.Items.Add(item);
-                }  
-                btnLuu.IsEnabled = true;
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
             }
+            else
+            {
+                txtMaHDNhap.Text = hdn_BUS.LayMaTiepTheo();
+                if (spChon_DTO != null)
+                {
+                    clsChiTietHDNhap_DTO ct = lsChiTiet.Find(o => o.MaSP == spChon_DTO.MaSP);
+                    if (ct != null)
+                    {
+                        ct.SoLuong += int.Parse(txtSoLuongNhap.Text);
+                    }
+                    else
+                    {
+                        //ct.MaHDNhap = txtMaHDNhap.Text;
+                        ct = new clsChiTietHDNhap_DTO();
+                        ct.MaSP = spChon_DTO.MaSP;
+                        ct.MaHDNhap = txtMaHDNhap.Text;
+                        ct.SoLuong = int.Parse(txtSoLuongNhap.Text);
+                        string giaban = spChon_DTO.GiaBan.ToString();
+                        int chieudai = giaban.Length;
+                        string gia = giaban.Substring(0, chieudai - 3);
+                        ct.DonGia = spChon_DTO.GiaBan;
+                        long tt = ct.SoLuong * int.Parse(gia);
+                        ct.ThanhTien = tt * 1000;
+                        lsChiTiet.Add(ct);
+                    }
+                    txtThanhTien.Text = lsChiTiet.Sum(o => o.ThanhTien).ToString();
+                    lsChiTietHoaDon.Items.Clear();
+                    foreach (var item in lsChiTiet)
+                    {
+                        lsChiTietHoaDon.Items.Add(item);
+                    }
+                    btnLuu.IsEnabled = true;
+                }
+            }            
         }
 
+        frmReportNhapHang f = new frmReportNhapHang();
         private void btnLuu_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -125,6 +138,7 @@ namespace CuaHang_DTDD_ver2.AllUserControl
                 {
                     hdn_DTO = new clsHoaDonNhap_DTO();
                     hdn_DTO.MaHDNhap = txtMaHDNhap.Text;
+                    f.MaHDNhap = hdn_DTO.MaHDNhap;
                     hdn_DTO.TongTien = lsChiTiet.Sum(o => o.ThanhTien);
                     hdn_DTO.MaNCC = cboNhaCungCap.SelectedValue.ToString();
                     hdn_DTO.CMNDNV = int.Parse(cboNhanVien.SelectedValue.ToString());
@@ -178,6 +192,7 @@ namespace CuaHang_DTDD_ver2.AllUserControl
             LoadDanhSachSP();
             LoadDanhSachNhanVien();
             LoadNhaCungCap();
+            cboNhanVien.IsEnabled = false;
             txtMaHDNhap.Text = hdn_BUS.LayMaTiepTheo();
             dtpNgayNhap.SelectedDate = DateTime.Now;
             dtpNgayNhap.DisplayDate = DateTime.Now;
@@ -194,6 +209,11 @@ namespace CuaHang_DTDD_ver2.AllUserControl
             lsChiTietHoaDon.Items.Clear();
             txtThanhTien.IsReadOnly = true;
             txtThanhTien.Clear();
+        }
+
+        private void btnInHoaDon_Click(object sender, RoutedEventArgs e)
+        {
+            f.ShowDialog();
         }
     }
 }

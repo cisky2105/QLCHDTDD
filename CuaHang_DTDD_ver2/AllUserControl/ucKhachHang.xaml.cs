@@ -134,33 +134,41 @@ namespace CuaHang_DTDD_ver2.AllUserControl
 
         private void btnLuu_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if(txtSDTKH.Text == "")
             {
-                if (tam == 0)
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+            }
+            else
+            {
+                try
                 {
-                    GetDataChiTiet();
-                    if (kh_BUS.ThemKhachHang(khChon_DTO))
+                    if (tam == 0)
                     {
-                        MessageBox.Show("Thêm khách hàng thành công!");
-                        Grid_Loaded(sender, e);
-                        DisGiaoDien();
+                        GetDataChiTiet();
+                        if (kh_BUS.ThemKhachHang(khChon_DTO))
+                        {
+                            MessageBox.Show("Thêm khách hàng thành công!");
+                            Grid_Loaded(sender, e);
+                            DisGiaoDien();
+                        }
+                    }
+                    if (tam == 1)
+                    {
+                        GetDataChiTiet();
+                        if (kh_BUS.CapNhatKhachHang(khChon_DTO))
+                        {
+                            MessageBox.Show("Sửa khách hàng thành công!");
+                            Grid_Loaded(sender, e);
+                            DisGiaoDien();
+                        }
                     }
                 }
-                if (tam == 1)
+                catch (Exception ex)
                 {
-                    GetDataChiTiet();
-                    if (kh_BUS.CapNhatKhachHang(khChon_DTO))
-                    {
-                        MessageBox.Show("Sửa khách hàng thành công!");
-                        Grid_Loaded(sender, e);
-                        DisGiaoDien();
-                    }
+                    MessageBox.Show(ex.Message);
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
         }
 
         private void lsDanhSachKhachHang_SelectionChanged(object sender, SelectionChangedEventArgs e)
