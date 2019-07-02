@@ -63,11 +63,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="AllUserControl\ucConTrolBar.xaml">
+    <Page Include="AllUserControl\ucKhachHang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AllUserControl\ucNhapHang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AllUserControl\ucQLNhaCungCap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AllUserControl\ucQLNhanVien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AllUserControl\ucQLNSX.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -79,11 +91,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AllUserControl\ucConTrolBar.xaml.cs">
-      <DependentUpon>ucConTrolBar.xaml</DependentUpon>
+    <Compile Include="AllUserControl\ucKhachHang.xaml.cs">
+      <DependentUpon>ucKhachHang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControl\ucNhapHang.xaml.cs">
+      <DependentUpon>ucNhapHang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControl\ucQLNhaCungCap.xaml.cs">
+      <DependentUpon>ucQLNhaCungCap.xaml</DependentUpon>
     </Compile>
     <Compile Include="AllUserControl\ucQLNhanVien.xaml.cs">
       <DependentUpon>ucQLNhanVien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControl\ucQLNSX.xaml.cs">
+      <DependentUpon>ucQLNSX.xaml</DependentUpon>
     </Compile>
     <Compile Include="AllUserControl\ucQLSanPham.xaml.cs">
       <DependentUpon>ucQLSanPham.xaml</DependentUpon>

@@ -1,12 +1,12 @@
-﻿<UserControl x:Class="CuaHang_DTDD_ver2.AllUserControl.ucQLNhanVien"
+﻿<UserControl x:Class="CuaHang_DTDD_ver2.AllUserControl.ucQLNhaCungCap"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CuaHang_DTDD_ver2.AllUserControl"
              mc:Ignorable="d" 
-            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-             d:DesignHeight="1000" d:DesignWidth="1000" Loaded="UserControl_Loaded">
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             d:DesignHeight="1000" d:DesignWidth="1000">
     <Grid Loaded="Grid_Loaded">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -14,50 +14,19 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto">
+        <Grid Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Height="auto" Margin="124,11,124,1.8" Width="auto">
             <TextBlock Style="{StaticResource MaterialDesignDisplay2TextBlock}">
-                    THÔNG TIN NHÂN VIÊN
+                    THÔNG TIN NHÀ CUNG CẤP
             </TextBlock>
         </Grid>
         <Grid Grid.Row="1" Margin="0,20,0,20">
             <Grid Width="900" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <WrapPanel>
-                    <TextBox x:Name="txtMaNV" materialDesign:HintAssist.Hint="Mã nhân viên:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold" Width="150" Margin="10, 20, 10, 0"/>
-                    <TextBox x:Name="txtTenNV" materialDesign:HintAssist.Hint="Tên nhân viên:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold"  Width="320" Margin="10, 20, 10, 0"/>
-                    <TextBox x:Name="txtSDTNV" materialDesign:HintAssist.Hint="Số điện thoại:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold" Width="150" Margin="10, 20, 10, 0"/>
-                    <!--<DatePicker x:Name="dtpNgaySinh"  Width="150" materialDesign:HintAssist.Hint="Ngày sinh" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" FontSize="14" FontWeight="Bold" Margin="10, 20, 10, 0" IsTodayHighlighted="True" SelectedDateFormat="Short" AutomationProperties.Name="dtpNgaySinh"/>-->                    
-                    <DatePicker
-                        x:Name="dtpNgaySinh"
-                        Width="150"
-                        materialDesign:HintAssist.Hint="Ngày sinh"                        
-                        FontSize="14" FontWeight="Bold" Margin="10, 32, 10, 0"/>
-                    <StackPanel
-                    Orientation="Horizontal">
-                        <RadioButton
-                        Name="radNam"
-                        FontSize="14"
-                        FontWeight="Bold"
-                        Style="{StaticResource MaterialDesignTabRadioButton}"
-                        Margin="10, 20, 10, 0"
-                        IsChecked="True"
-                        Content="Nam" />
-                        <RadioButton
-                        Name="radNu"
-                        Style="{StaticResource MaterialDesignTabRadioButton}"
-                        FontSize="14"
-                        FontWeight="Bold"
-                        Margin="10, 20, 10, 0"
-                        IsChecked="False"
-                        Content="Nữ" />
-                    </StackPanel>
-                    <PasswordBox x:Name="txtMatKhau" materialDesign:HintAssist.Hint="Mật khẩu"
-                        materialDesign:HintAssist.Foreground="Green"
-                        materialDesign:TextFieldAssist.UnderlineBrush="Green"
-                        Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" 
-                                 FontSize="14" FontWeight="Bold" Width="150" Margin="10, 20, 10, 0"/>
-                    <TextBox x:Name="txtDiaChi" materialDesign:HintAssist.Hint="Địa chỉ:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold" Width="150" Margin="10, 20, 10, 0"/>
-                    <ComboBox x:Name="cboQuyen" materialDesign:HintAssist.Hint="Quyền người dùng:" DisplayMemberPath="TenQuyen" SelectedValuePath="MaQuyen" Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="14" FontWeight="Bold"  Width="150" Margin="10, 20, 10, 0">
-                    </ComboBox>
+                    <TextBox x:Name="txtMaNCC" materialDesign:HintAssist.Hint="Mã nhà cung cấp:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold" Width="150" Margin="10, 20, 10, 0"/>
+                    <TextBox x:Name="txtTenNCC" materialDesign:HintAssist.Hint="Tên nhà cung cấp:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold"  Width="320" Margin="10, 20, 10, 0"/>
+                    <TextBox x:Name="txtSDTNCC" materialDesign:HintAssist.Hint="Số điện thoại:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold" Width="150" Margin="10, 20, 10, 0"/>
+                    <TextBox x:Name="txtDiaChiNCC" materialDesign:HintAssist.Hint="Địa chỉ:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold" Width="150" Margin="10, 20, 10, 0"/>
+                    <TextBox x:Name="txtEmailNCC" materialDesign:HintAssist.Hint="Email:" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="14" FontWeight="Bold" Width="320" Margin="10, 20, 10, 0"/>
                 </WrapPanel>
             </Grid>
         </Grid>
@@ -125,20 +94,20 @@
             </Grid>
             <Grid Grid.Row="1" Height="400" Width="750">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <ListView Name="lsDanhSachNhanVien" HorizontalAlignment="Center" FontSize="15" SelectionChanged="lsDanhSachNhanVien_SelectionChanged">
+                    <ListView Name="lsDanhSachNhaCungCap" HorizontalAlignment="Center" FontSize="15" SelectionChanged="lsDanhSachNhaCungCap_SelectionChanged">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Mã nhân viên" DisplayMemberBinding="{Binding CMNDNV}"></GridViewColumn>
-                                <GridViewColumn Header="Tên nhân viên" DisplayMemberBinding="{Binding HoVaTen}"></GridViewColumn>
-                                <GridViewColumn Header="Ngày sinh" DisplayMemberBinding="{Binding NgaySinh}"></GridViewColumn>
+                                <GridViewColumn Header="Mã nhà cung cấp" DisplayMemberBinding="{Binding MaNCC}"></GridViewColumn>
+                                <GridViewColumn Header="Tên nhà cung cấp" DisplayMemberBinding="{Binding TenNCC}"></GridViewColumn>
                                 <GridViewColumn Header="Số điện thoại" DisplayMemberBinding="{Binding SDT}"></GridViewColumn>
+                                <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}"></GridViewColumn>
                                 <GridViewColumn Header="Địa chỉ" DisplayMemberBinding="{Binding DiaChi}"></GridViewColumn>
                             </GridView>
                         </ListView.View>
                     </ListView>
                 </ScrollViewer>
             </Grid>
-            
+
         </Grid>
     </Grid>
 </UserControl>

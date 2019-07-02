@@ -45,5 +45,33 @@ namespace CuaHang_DTDD_ver2
             pnlUC.Children.Clear();
             pnlUC.Children.Add(qlnv);
         }
+
+        private void mnQLNCC_Click(object sender, RoutedEventArgs e)
+        {
+            ucQLNhaCungCap qlncc = new ucQLNhaCungCap();
+            pnlUC.Children.Clear();
+            pnlUC.Children.Add(qlncc);
+        }
+
+        private void mnQLNSX_Click(object sender, RoutedEventArgs e)
+        {
+            ucQLNSX qlnsx = new ucQLNSX();
+            pnlUC.Children.Clear();
+            pnlUC.Children.Add(qlnsx);
+        }
+
+        private void mnQLKhachHang_Click(object sender, RoutedEventArgs e)
+        {
+            ucKhachHang qlkh = new ucKhachHang();
+            pnlUC.Children.Clear();
+            pnlUC.Children.Add(qlkh);
+        }
+
+        private void mnNhapHang_Click(object sender, RoutedEventArgs e)
+        {
+            ucNhapHang qlnh = new ucNhapHang();
+            pnlUC.Children.Clear();
+            pnlUC.Children.Add(qlnh);
+        }
     }
 }
