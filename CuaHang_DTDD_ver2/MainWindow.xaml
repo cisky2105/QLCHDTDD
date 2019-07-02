@@ -57,7 +57,7 @@
                             </MenuItem.Icon>
                         </MenuItem>
                     </MenuItem>
-                    <MenuItem Header="Quản lý bán hàng">
+                    <MenuItem Header="Quản lý bán hàng" x:Name="mnQLBanHang" Click="mnQLBanHang_Click">
                         <MenuItem Header="Bán hàng">
                             <MenuItem.Icon>
                                 <materialDesign:PackIcon Kind="TrolleyPlus" />

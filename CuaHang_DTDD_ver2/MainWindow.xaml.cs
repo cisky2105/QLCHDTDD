@@ -114,5 +114,12 @@ namespace CuaHang_DTDD_ver2
             frmReportNhapHang f = new frmReportNhapHang();
             f.ShowDialog();
         }
+
+        private void mnQLBanHang_Click(object sender, RoutedEventArgs e)
+        {
+            ucBanHang qlbh = new ucBanHang();
+            pnlUC.Children.Clear();
+            pnlUC.Children.Add(qlbh);
+        }
     }
 }

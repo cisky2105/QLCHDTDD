@@ -79,6 +79,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AllUserControl\ucBanHang.xaml.cs">
+      <DependentUpon>ucBanHang.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AllUserControl\ucTonKho.xaml.cs">
       <DependentUpon>ucTonKho.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,10 @@
     <Compile Include="ResetPasswordWindow.xaml.cs">
       <DependentUpon>ResetPasswordWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="AllUserControl\ucBanHang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AllUserControl\ucKhachHang.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

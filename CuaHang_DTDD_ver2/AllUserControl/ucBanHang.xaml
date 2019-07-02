@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="CuaHang_DTDD_ver2.AllUserControl.ucBanHang"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CuaHang_DTDD_ver2.AllUserControl"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+            TextElement.FontWeight="Regular"
+            TextElement.FontSize="13"
+            TextOptions.TextFormattingMode="Ideal"
+            TextOptions.TextRenderingMode="Auto"
+            Background="{DynamicResource MaterialDesignPaper}"
+            FontFamily="{DynamicResource MaterialDesignFont}" d:DesignWidth="1000" Height="1000">
+    <StackPanel Loaded="StackPanel_Loaded">
+        <Label x:Name="label" Content="BÁN HÀNG" FontSize="50" HorizontalAlignment="Center"/>
+        <DockPanel Height="900" Margin="0,0,0,0" HorizontalAlignment="Center">
+            <Border BorderBrush="Red" BorderThickness="4 4 2 4" Width="500" Margin="0,0,0,62">
+                <StackPanel>
+                    <TextBox x:Name="txtTimTenSP" materialDesign:HintAssist.Hint="Tìm Tên Sản Phẩm" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="24" TextChanged="txtTimTenSP_TextChanged" />
+                    <Grid Height="300">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <ListView x:Name="lvwSanPham" HorizontalAlignment="Center" DisplayMemberPath="TenSP" SelectedValuePath="MaSP" FontSize="15" Width="500" SelectionChanged="lvwSanPham_SelectionChanged" Height="300">
+                                <Image x:Name="imgSanPham" Height="60" Width="60"/>
+                            </ListView>
+                        </ScrollViewer>
+                    </Grid>
+                    <ComboBox x:Name="cboNhanVien" materialDesign:HintAssist.Hint="Nhân Viên Bán Hàng" DisplayMemberPath="HoVaTen" SelectedValuePath="CMNDNV"  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24"  />
+                    <TextBox x:Name="txtSDTKH" materialDesign:HintAssist.Hint="Số Điện Thoại Khách Hàng" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="24" />
+                    <Grid Height="327">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <ListView x:Name="dgvChiTietHoaDon" HorizontalAlignment="Center"  FontSize="15" Width="500" Height="327">
+                                <ListView.View>
+                                    <GridView >
+                                        <GridViewColumn x:Name="colMaSP" Header="Mã SP" Width="90"  DisplayMemberBinding="{Binding MaSP}"></GridViewColumn>
+                                        <GridViewColumn x:Name="colTenSP" Header="Tên SP" Width="150" DisplayMemberBinding="{Binding TenSP}"></GridViewColumn>
+                                        <GridViewColumn x:Name="colSoLuong" Header="SL" Width="50" DisplayMemberBinding="{Binding SoLuong}"></GridViewColumn>
+                                        <GridViewColumn x:Name="colGiaBan" Header="Giá" Width="70" DisplayMemberBinding="{Binding GiaXuat}"></GridViewColumn>
+                                        <GridViewColumn x:Name="colGiaKM" Header="KM" Width="70" DisplayMemberBinding="{Binding GiaKM}"></GridViewColumn>
+                                        <GridViewColumn x:Name="colThanhTien" Header="Tiển" Width="70" DisplayMemberBinding="{Binding ThanhTien}"></GridViewColumn>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                        </ScrollViewer>
+                    </Grid>
+                    <TextBox x:Name="txtTongTien" materialDesign:HintAssist.Hint="Tổng Thanh Toán" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="24" />
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Red" BorderThickness="2 4 4 4" Width="500" Margin="0,0,0,62">
+                <StackPanel>
+                    <TextBox x:Name="txtMaHDXuat" materialDesign:HintAssist.Hint="Mã Hóa Đơn Xuất" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="24" />
+                    <DockPanel VerticalAlignment="Stretch" LastChildFill="False">
+                        <TextBox x:Name="txtMaSP" materialDesign:HintAssist.Hint="Mã Sản Phẩm" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="427" FontSize="24"  />
+                        <Button x:Name="btnTimSanPham" Content="Tìm" Click="btnTimSanPham_Click"></Button>
+                    </DockPanel>
+                    <Image x:Name="imgHinhAnh" Height="250" Margin="120,0,75,0" Width="298"></Image>
+                    <TextBox x:Name="txtTenSP" materialDesign:HintAssist.Hint="Tên Sản Phẩm" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="24"  />
+                    <ComboBox x:Name="cboLoaiDT" materialDesign:HintAssist.Hint="Loại Sản Phẩm" DisplayMemberPath="TenLoaiDT" SelectedValuePath="MaLoaiDT"  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24"  />
+                    <TextBox x:Name="txtSLTonKho" materialDesign:HintAssist.Hint="Số Lượng Tồn" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="24"  />
+                    <ComboBox x:Name="cboNSX" materialDesign:HintAssist.Hint="Nhà Sản Xuất" DisplayMemberPath="TenNSX" SelectedValuePath="MaNSX" Style="{StaticResource MaterialDesignFloatingHintComboBox}"  FontSize="24"  />
+                    <TextBox x:Name="txtGiaBan" materialDesign:HintAssist.Hint="Giá Bán" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="24"  />
+                    <TextBox x:Name="txtGiaKM" materialDesign:HintAssist.Hint="Giá Khuyến mãi" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="24"  />
+                    <DockPanel VerticalAlignment="Stretch" LastChildFill="False">
+                        <Button x:Name="btnTruSLM" Content="-" Width="50" Margin="30,0,31,0" FontSize="24" Height="50" Click="btnTruSLM_Click"></Button>
+                        <TextBox x:Name="txtSLM" materialDesign:HintAssist.Hint="Số Lượng Mua" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="160" FontSize="24" Text="1"  />
+                        <Button x:Name="btnCongSLM" Content="+" Width="50" Margin="30,0,31,0" Height="50" FontSize="24" Click="btnCongSLM_Click"></Button>
+                        <Button x:Name="btnXoaSLM" Content="X" Width="50" Margin="32,0,30,0" Height="50" FontSize="24" Click="btnXoaSLM_Click"></Button>
+                        <Button></Button>
+                    </DockPanel>
+                    <DockPanel VerticalAlignment="Stretch" LastChildFill="False" Height="169">
+                        <Button x:Name="btnLuuPhieu" Content="Lập HD" Margin="10,51,10,61" Width="146" Height="Auto" FontSize="20" Click="btnLuuPhieu_Click"></Button>
+                        <Button x:Name="btnTinhTien" Content="Tính Tiền" Margin="10,51,10,61" Width="146" Height="Auto" FontSize="20" Click="btnTinhTien_Click"></Button>
+                        <Button x:Name="btnResetPhieu" Content="Reset Phiếu" Margin="10,51,10,61" Width="146" Height="Auto" FontSize="20" Click="btnResetPhieu_Click"></Button>
+                    </DockPanel>
+
+                </StackPanel>
+            </Border>
+        </DockPanel>
+    </StackPanel>
+</UserControl>
