@@ -14,8 +14,6 @@ namespace DTO
         private int _DonGia;
         private int _GiaKM;
 
-       
-       
 
         public string MaHDXuat
         {
@@ -87,6 +85,10 @@ namespace DTO
             {
                 return ((SoLuong * DonGia) - (SoLuong * GiaKM));
             }
+        }
+         public string TenSP
+        {
+            get ; set ;
         }
     }
 }

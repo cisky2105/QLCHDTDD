@@ -118,6 +118,7 @@ namespace CuaHang_DTDD_ver2
         private void mnQLBanHang_Click(object sender, RoutedEventArgs e)
         {
             ucBanHang qlbh = new ucBanHang();
+            qlbh.Nvdnto = Nvdto;
             pnlUC.Children.Clear();
             pnlUC.Children.Add(qlbh);
         }

@@ -27,6 +27,12 @@ namespace CuaHang_DTDD_ver2.AllUserControl
         {
             InitializeComponent();
         }
+        private clsNhanVien_DTO _nvdto;
+        public clsNhanVien_DTO Nvdnto
+        {
+            get { return _nvdto; }
+            set { _nvdto = value; }
+        }
         List<clsSanPham_DTO> _lsSanPham = new List<clsSanPham_DTO>();
         List<clsKhachHang_DTO> _lsKhachHang = new List<clsKhachHang_DTO>();
         clsKhachHang_BUS _khBUS = new clsKhachHang_BUS();
@@ -36,7 +42,7 @@ namespace CuaHang_DTDD_ver2.AllUserControl
         clsHoaDonXuat_DTO _hoaDon = null;
         clsHoaDonXuat_BUS _hdBUS = new clsHoaDonXuat_BUS();
         clsChiTietHDXuat_BUS _cthdBUS = new clsChiTietHDXuat_BUS();
-        string strPath = @"C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\bin\Debug\images\";
+        string strPath = @"C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\images\";
         List<clsNhaSanXuat_DTO> _lsNhaSanXuat = new List<clsNhaSanXuat_DTO>();
         List<clsLoaiDT_DTO> _lsLoaiDT = new List<clsLoaiDT_DTO>();
         clsNhaSanXuat_BUS _nsx_BUS = new clsNhaSanXuat_BUS();
@@ -108,7 +114,7 @@ namespace CuaHang_DTDD_ver2.AllUserControl
 
             clsNhanVien_DTO nvdangnhap = new clsNhanVien_DTO();
             cboNhanVien.ItemsSource = _lsNhanVien;
-            cboNhanVien.SelectedValue = new clsNhanVien_DTO() { CMNDNV = 0306161426, HoVaTen = "Lu Hoang Khang" };
+            cboNhanVien.SelectedValue = Nvdnto.CMNDNV;
         }
 
         private void BindingChiTiet()
@@ -169,7 +175,8 @@ namespace CuaHang_DTDD_ver2.AllUserControl
                 if (_cthd != null) //Đã tồn tại
                 {
                     _cthd.SoLuong -= int.Parse(txtSLM.Text);
-                    if (_cthd.SoLuong == 0)
+                    txtSLM.Text = "1";
+                    if (_cthd.SoLuong <= 0)
                     {
                         MessageBox.Show("Số Lượng Sản Phẩm Đã Được Xóa Hết!!! :((");
                         _cthd.SoLuong = 0;
@@ -203,6 +210,7 @@ namespace CuaHang_DTDD_ver2.AllUserControl
                     _cthd.MaSP = _spChon.MaSP;
                     _cthd.SoLuong = int.Parse(txtSLM.Text);
                     txtSLM.Text = "1";
+                    _cthd.TenSP = _spChon.TenSP;
                     _cthd.DonGia = (int)_spChon.GiaBan;
                     _cthd.GiaKM = (int)_spChon.GiaKM;
                     _lsChiTiet.Add(_cthd);
@@ -263,8 +271,8 @@ namespace CuaHang_DTDD_ver2.AllUserControl
                     }
                     _hoaDon.MaHDXuat = _hdBUS.LayMaTiepTheo();
                     _hoaDon.SDTKH = txtSDTKH.Text;
-                    _hoaDon.CMNDNV = 123456;// chua code dang nhap nhé!!!!
-                    //_hoaDon.CMNDNV = int.Parse(cboNhanVien.SelectedValue.ToString());
+                    //_hoaDon.CMNDNV = 123456;// chua code dang nhap nhé!!!!
+                    _hoaDon.CMNDNV = int.Parse(cboNhanVien.SelectedValue.ToString());
                     _hoaDon.TongTien = _lsChiTiet.Sum(o => o.ThanhTien);
                     _hoaDon.NgayXuat = DateTime.Now;
                     try
@@ -311,7 +319,7 @@ namespace CuaHang_DTDD_ver2.AllUserControl
             {
                 //frmXemBaoCao frm = new frmXemBaoCao();
                 //frm.InHoaDonXuat(_hoaDon, _lsChiTiet);
-                //frm.ShowDialog();
+               // frm.ShowDialog();
                 _lsChiTiet = new List<clsChiTietHDXuat_DTO>();
                 dgvChiTietHoaDon.ItemsSource = _lsChiTiet;
                 txtTimTenSP.Clear();
@@ -324,7 +332,7 @@ namespace CuaHang_DTDD_ver2.AllUserControl
                 cboNSX.SelectedValue = -1;
                 cboLoaiDT.SelectedValue = -1;
                 txtSDTKH.Clear();
-                //imgHinhAnh.Image = null;
+                imgHinhAnh.Source = null;
                 lvwSanPham.Items.Clear();
                 StackPanel_Loaded(sender, e);
             }

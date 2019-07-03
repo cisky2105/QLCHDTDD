@@ -22,7 +22,6 @@
                     <Grid Height="300">
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
                             <ListView x:Name="lvwSanPham" HorizontalAlignment="Center" DisplayMemberPath="TenSP" SelectedValuePath="MaSP" FontSize="15" Width="500" SelectionChanged="lvwSanPham_SelectionChanged" Height="300">
-                                <Image x:Name="imgSanPham" Height="60" Width="60"/>
                             </ListView>
                         </ScrollViewer>
                     </Grid>
@@ -30,21 +29,21 @@
                     <TextBox x:Name="txtSDTKH" materialDesign:HintAssist.Hint="Số Điện Thoại Khách Hàng" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="24" />
                     <Grid Height="327">
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
-                            <ListView x:Name="dgvChiTietHoaDon" HorizontalAlignment="Center"  FontSize="15" Width="500" Height="327">
+                            <ListView x:Name="dgvChiTietHoaDon" HorizontalAlignment="Center"  FontSize="13" Width="500" Height="327">
                                 <ListView.View>
                                     <GridView >
-                                        <GridViewColumn x:Name="colMaSP" Header="Mã SP" Width="90"  DisplayMemberBinding="{Binding MaSP}"></GridViewColumn>
-                                        <GridViewColumn x:Name="colTenSP" Header="Tên SP" Width="150" DisplayMemberBinding="{Binding TenSP}"></GridViewColumn>
+                                        <GridViewColumn x:Name="colMaSP" Header="Mã SP" Width="75"  DisplayMemberBinding="{Binding MaSP}"></GridViewColumn>
+                                        <GridViewColumn x:Name="colTenSP" Header="Tên SP" Width="130" DisplayMemberBinding="{Binding TenSP}"></GridViewColumn>
                                         <GridViewColumn x:Name="colSoLuong" Header="SL" Width="50" DisplayMemberBinding="{Binding SoLuong}"></GridViewColumn>
-                                        <GridViewColumn x:Name="colGiaBan" Header="Giá" Width="70" DisplayMemberBinding="{Binding GiaXuat}"></GridViewColumn>
+                                        <GridViewColumn x:Name="colGiaXuat" Header="Giá" Width="70" DisplayMemberBinding="{Binding DonGia}"></GridViewColumn>
                                         <GridViewColumn x:Name="colGiaKM" Header="KM" Width="70" DisplayMemberBinding="{Binding GiaKM}"></GridViewColumn>
-                                        <GridViewColumn x:Name="colThanhTien" Header="Tiển" Width="70" DisplayMemberBinding="{Binding ThanhTien}"></GridViewColumn>
+                                        <GridViewColumn x:Name="colThanhTien" Header="Số Tiển" Width="115" DisplayMemberBinding="{Binding ThanhTien}"></GridViewColumn>
                                     </GridView>
                                 </ListView.View>
                             </ListView>
                         </ScrollViewer>
                     </Grid>
-                    <TextBox x:Name="txtTongTien" materialDesign:HintAssist.Hint="Tổng Thanh Toán" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="24" />
+                    <TextBox x:Name="txtTongTien" materialDesign:HintAssist.Hint="Tổng Thanh Toán" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontSize="24" Text="0"/>
                 </StackPanel>
             </Border>
             <Border BorderBrush="Red" BorderThickness="2 4 4 4" Width="500" Margin="0,0,0,62">
