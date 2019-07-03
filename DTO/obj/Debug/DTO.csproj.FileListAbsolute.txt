@@ -1,4 +1,42 @@
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\DTO\bin\Debug\DTO.dll
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\DTO\bin\Debug\DTO.pdb
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\DTO\obj\Debug\DTO.dll
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\DTO\obj\Debug\DTO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DTO\bin\Debug\DTO.exe.config
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DTO\bin\Debug\DTO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DTO\bin\Debug\DTO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DTO\obj\Debug\DTO.csproj.GenerateResource.Cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DTO\obj\Debug\DTO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DTO\obj\Debug\DTO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DTO\bin\Debug\DTO.exe.config
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DTO\bin\Debug\DTO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DTO\bin\Debug\DTO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DTO\obj\Debug\DTO.csproj.GenerateResource.Cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DTO\obj\Debug\DTO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DTO\obj\Debug\DTO.pdb
+C:\Users\namop\Desktop\DoAn\DTO\bin\Debug\DTO.exe.config
+C:\Users\namop\Desktop\DoAn\DTO\bin\Debug\DTO.exe
+C:\Users\namop\Desktop\DoAn\DTO\bin\Debug\DTO.pdb
+C:\Users\namop\Desktop\DoAn\DTO\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\namop\Desktop\DoAn\DTO\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\namop\Desktop\DoAn\DTO\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\namop\Desktop\DoAn\DTO\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\namop\Desktop\DoAn\DTO\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\namop\Desktop\DoAn\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\namop\Desktop\DoAn\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\namop\Desktop\DoAn\DTO\obj\Debug\DTO.csproj.GenerateResource.Cache
+C:\Users\namop\Desktop\DoAn\DTO\obj\Debug\DTO.exe
+C:\Users\namop\Desktop\DoAn\DTO\obj\Debug\DTO.pdb
+C:\Users\namop\Desktop\QLCHDTDD\DTO\bin\Debug\DTO.exe.config
+C:\Users\namop\Desktop\QLCHDTDD\DTO\bin\Debug\DTO.exe
+C:\Users\namop\Desktop\QLCHDTDD\DTO\bin\Debug\DTO.pdb
+C:\Users\namop\Desktop\QLCHDTDD\DTO\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\namop\Desktop\QLCHDTDD\DTO\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\namop\Desktop\QLCHDTDD\DTO\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\namop\Desktop\QLCHDTDD\DTO\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\namop\Desktop\QLCHDTDD\DTO\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\namop\Desktop\QLCHDTDD\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\namop\Desktop\QLCHDTDD\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\namop\Desktop\QLCHDTDD\DTO\obj\Debug\DTO.csproj.GenerateResource.Cache
+C:\Users\namop\Desktop\QLCHDTDD\DTO\obj\Debug\DTO.exe
+C:\Users\namop\Desktop\QLCHDTDD\DTO\obj\Debug\DTO.pdb

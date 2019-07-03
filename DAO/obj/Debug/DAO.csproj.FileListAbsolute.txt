@@ -1,0 +1,50 @@
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DAO\bin\Debug\DAO.exe.config
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DAO\bin\Debug\DAO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DAO\bin\Debug\DAO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DAO\bin\Debug\DTO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DAO\bin\Debug\DTO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DAO\obj\Debug\DAO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\DAO\obj\Debug\DAO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DAO\bin\Debug\DAO.exe.config
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DAO\bin\Debug\DAO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DAO\bin\Debug\DAO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DAO\bin\Debug\DTO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DAO\bin\Debug\DTO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DAO\obj\Debug\DAO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\DAO\obj\Debug\DAO.pdb
+C:\Users\namop\Desktop\DoAn\DAO\bin\Debug\DAO.exe.config
+C:\Users\namop\Desktop\DoAn\DAO\bin\Debug\DAO.exe
+C:\Users\namop\Desktop\DoAn\DAO\bin\Debug\DAO.pdb
+C:\Users\namop\Desktop\DoAn\DAO\bin\Debug\DTO.exe
+C:\Users\namop\Desktop\DoAn\DAO\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\namop\Desktop\DoAn\DAO\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\namop\Desktop\DoAn\DAO\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\namop\Desktop\DoAn\DAO\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\namop\Desktop\DoAn\DAO\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\namop\Desktop\DoAn\DAO\bin\Debug\DTO.pdb
+C:\Users\namop\Desktop\DoAn\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\namop\Desktop\DoAn\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\namop\Desktop\DoAn\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
+C:\Users\namop\Desktop\DoAn\DAO\obj\Debug\DAO.exe
+C:\Users\namop\Desktop\DoAn\DAO\obj\Debug\DAO.pdb
+C:\Users\namop\Desktop\QLCHDTDD\DAO\bin\Debug\DAO.exe.config
+C:\Users\namop\Desktop\QLCHDTDD\DAO\bin\Debug\DAO.exe
+C:\Users\namop\Desktop\QLCHDTDD\DAO\bin\Debug\DAO.pdb
+C:\Users\namop\Desktop\QLCHDTDD\DAO\bin\Debug\DTO.exe
+C:\Users\namop\Desktop\QLCHDTDD\DAO\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\namop\Desktop\QLCHDTDD\DAO\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\namop\Desktop\QLCHDTDD\DAO\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\namop\Desktop\QLCHDTDD\DAO\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\namop\Desktop\QLCHDTDD\DAO\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\namop\Desktop\QLCHDTDD\DAO\bin\Debug\DTO.pdb
+C:\Users\namop\Desktop\QLCHDTDD\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\namop\Desktop\QLCHDTDD\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\namop\Desktop\QLCHDTDD\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
+C:\Users\namop\Desktop\QLCHDTDD\DAO\obj\Debug\DAO.exe
+C:\Users\namop\Desktop\QLCHDTDD\DAO\obj\Debug\DAO.pdb

@@ -1,9 +1,58 @@
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\BUS\bin\Debug\BUS.dll
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\BUS\bin\Debug\BUS.pdb
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\BUS\bin\Debug\ClassLibrary1.dll
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\BUS\bin\Debug\DTO.dll
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\BUS\bin\Debug\ClassLibrary1.pdb
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\BUS\bin\Debug\DTO.pdb
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\BUS\obj\Debug\BUS.dll
-C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\BUS\obj\Debug\BUS.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\obj\Debug\BUS.csproj.GenerateResource.Cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\bin\Debug\BUS.exe.config
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\bin\Debug\BUS.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\bin\Debug\BUS.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\bin\Debug\DAO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\bin\Debug\DTO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\bin\Debug\DAO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\bin\Debug\DTO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\obj\Debug\BUS.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\GUI\BUS\obj\Debug\BUS.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\bin\Debug\BUS.exe.config
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\bin\Debug\BUS.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\bin\Debug\BUS.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\bin\Debug\DAO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\bin\Debug\DTO.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\bin\Debug\DAO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\bin\Debug\DTO.pdb
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\obj\Debug\BUS.csproj.GenerateResource.Cache
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\obj\Debug\BUS.exe
+C:\Users\HOANG KHANG\Desktop\DoAnTN\DoAn\DoAnDTDD\BUS\obj\Debug\BUS.pdb
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\BUS.exe.config
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\BUS.exe
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\BUS.pdb
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\DAO.exe
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\DTO.exe
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\DAO.pdb
+C:\Users\namop\Desktop\DoAn\BUS\bin\Debug\DTO.pdb
+C:\Users\namop\Desktop\DoAn\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\namop\Desktop\DoAn\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\namop\Desktop\DoAn\BUS\obj\Debug\BUS.csproj.GenerateResource.Cache
+C:\Users\namop\Desktop\DoAn\BUS\obj\Debug\BUS.exe
+C:\Users\namop\Desktop\DoAn\BUS\obj\Debug\BUS.pdb
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\BUS.exe.config
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\BUS.exe
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\BUS.pdb
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\DAO.exe
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\DTO.exe
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\DAO.pdb
+C:\Users\namop\Desktop\QLCHDTDD\BUS\bin\Debug\DTO.pdb
+C:\Users\namop\Desktop\QLCHDTDD\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\namop\Desktop\QLCHDTDD\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\namop\Desktop\QLCHDTDD\BUS\obj\Debug\BUS.csproj.GenerateResource.Cache
+C:\Users\namop\Desktop\QLCHDTDD\BUS\obj\Debug\BUS.exe
+C:\Users\namop\Desktop\QLCHDTDD\BUS\obj\Debug\BUS.pdb

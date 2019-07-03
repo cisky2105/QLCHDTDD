@@ -49,9 +49,6 @@ C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\Cua
 C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2.frmReportNhapHang.resources
 C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\obj\Debug\RdlCompile.cache
 C:\Users\HOANG KHANG\Desktop\DoAn_vs_Wpf\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\CuaHang_DTDD_ver2\obj\Debug\RdlCompile.compiled
-C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\CuaHang_DTDD_ver2.exe.config
-C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2.exe
-C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2.pdb
 C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2.csprojResolveAssemblyReference.cache
 C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2.csproj.CuaHang_DTDD_ver2.exe.config
 C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\AllUserControl\ucBanHang.g.cs
@@ -68,3 +65,40 @@ C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\ResetPasswordWindow.
 C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\App.g.cs
 C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2_MarkupCompile.cache
 C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2_MarkupCompile.lref
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\CuaHang_DTDD_ver2.exe.config
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\CuaHang_DTDD_ver2.exe
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\CuaHang_DTDD_ver2.pdb
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\BUS.exe
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\DTO.exe
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\MaterialDesignColors.dll
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\DAO.exe
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\BUS.pdb
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\DTO.pdb
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\bin\Debug\DAO.pdb
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\App.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\AllUserControl\ucBanHang.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\AllUserControl\ucKhachHang.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\AllUserControl\ucNhapHang.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\AllUserControl\ucQLNhaCungCap.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\AllUserControl\ucQLNhanVien.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\AllUserControl\ucQLNSX.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\AllUserControl\ucQLSanPham.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\AllUserControl\ucTonKho.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\LoginWindow.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\MainWindow.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\ResetPasswordWindow.baml
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2.g.resources
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2.frmReportNhapHang.resources
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2.Properties.Resources.resources
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2.csproj.GenerateResource.Cache
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\RdlCompile.cache
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\RdlCompile.compiled
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2.exe
+C:\Users\namop\Desktop\QLCHDTDD\CuaHang_DTDD_ver2\obj\Debug\CuaHang_DTDD_ver2.pdb

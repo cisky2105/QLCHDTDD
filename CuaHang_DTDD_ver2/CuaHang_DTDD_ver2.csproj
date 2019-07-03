@@ -254,16 +254,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\DoAnTN\DoAn\DoAnDTDD\BUS\BUS.csproj">
-      <Project>{db0c2730-5021-4a69-9f28-827bd643e11f}</Project>
-      <Name>BUS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\DoAnTN\DoAn\DoAnDTDD\DTO\DTO.csproj">
-      <Project>{9fd1e9ef-6666-4841-8499-083df805a130}</Project>
-      <Name>DTO</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Icon\001-browser.png" />
     <Resource Include="Icon\001-buildings.png" />
     <Resource Include="Icon\002-add-reminder.png" />
@@ -410,6 +400,16 @@
     <Resource Include="images\SP00006.jpg" />
     <Resource Include="images\SP00007.jpg" />
     <Resource Include="images\SP00008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{DB0C2730-5021-4A69-9F28-827BD643E11F}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{9FD1E9EF-6666-4841-8499-083DF805A130}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
